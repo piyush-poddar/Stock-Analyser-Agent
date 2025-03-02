@@ -22,7 +22,7 @@ Additionally, it generates line and candlestick charts using Matplotlib to visua
 
 - **Python** (Backend processing)
 
-- **LangGraph** (For combining AI and stock data processing)
+- **LangGraph** (For Developing the AI Agent with Stock Analysis Tool)
 
 - **Streamlit** (For chatbot UI)
 
