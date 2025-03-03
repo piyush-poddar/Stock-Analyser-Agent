@@ -20,17 +20,17 @@ Additionally, it generates line and candlestick charts using Matplotlib to visua
 
 ## 🛠️ Tech Stack
 
-- **Python** (Backend processing)
+- **Python** - Backend processing
 
-- **LangGraph** (For Developing the AI Agent with Stock Analysis Tool)
+- **LangGraph & LangChain** - For Developing the AI Agent with Stock Analysis Tool
 
-- **Streamlit** (For chatbot UI)
+- **yFinance** - Fetching real-time stock market data
 
-- **yFinance** (Fetching real-time stock market data)
+- **Gemini API** - LLM Powering the Agent
 
-- **Gemini API** (AI-powered query response)
+- **Matplotlib** - For visualizing stock trends
 
-- **Matplotlib** (For visualizing stock trends)
+- **Streamlit** - For chatbot UI
 
 ## 🚀 Installation
 
