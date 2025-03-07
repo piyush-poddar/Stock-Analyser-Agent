@@ -16,9 +16,10 @@ import google.generativeai as genai
 import yfinance as yf
 import matplotlib
 import matplotlib.pyplot as plt
+from streamlit import secrets
 matplotlib.use("Agg")  # To use non-GUI backend
 
-genai.configure(api_key=os.environ.get("GOOGLE_API_KEY", "")) 
+genai.configure(api_key=secrets["GEMINI_API_KEY"]) 
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 
 class StockAnalysisInput(BaseModel):

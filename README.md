@@ -46,7 +46,7 @@ cd Stock-Analyser-Agent
 pip install -r requirements.txt
 ```
 
-3. Set your Gemini API Key as an environment variable named `GOOGLE_API_KEY`.
+3. Set your Gemini API Key as an environment variable named `GEMINI_API_KEY`.
    
 4. Run the Streamlit chatbot:
 ```Bash
