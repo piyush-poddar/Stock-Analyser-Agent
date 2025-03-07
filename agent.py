@@ -18,6 +18,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 matplotlib.use("Agg")  # To use non-GUI backend
 
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+if not GEMINI_API_KEY:
+    raise ValueError("Please set the GEMINI_API_KEY environment variable")
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY", "")) 
 llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.2)
 
