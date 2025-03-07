@@ -2,7 +2,12 @@ import streamlit as st
 import base64
 from io import BytesIO
 import json
-
+import os
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+if not GEMINI_API_KEY:
+    raise ValueError("Please set the GEMINI_API_KEY environment variable")
+else:
+    print("GEMINI API KEY found")
 from agent import start_workflow
 
 # Initialize workflow graph only once per session
